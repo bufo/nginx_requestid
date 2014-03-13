@@ -105,7 +105,7 @@ ngx_http_requestid_set_variable(ngx_http_request_t *r,
     p = hasht;
     static u_char hex[] = "0123456789abcdef";
 
-    for (i = 0; i < MD5_HASH_LEN; i++) {
+    for (i = 0; i < MD5_BHASH_LEN; i++) {
 		*p++ = hex[hashb[i] >> 4];
 		*p++ = hex[hashb[i] & 0xf];
     }
